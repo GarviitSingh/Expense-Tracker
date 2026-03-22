@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="expense.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Expense Tracker</h2>
+
+    <div class="balance-card">
+        <p class="balance-label">Current Balance</p>
+        <h1 id="balance">₹0.00</h1>
+    </div>
+
+    <div class="stats-grid">
+        <div class="stat-box">
+            <p>INCOME</p>
+            <span id="money-plus" class="money-plus">+₹0.00</span>
+        </div>
+        <div class="stat-box">
+            <p>EXPENSE</p>
+            <span id="money-minus" class="money-minus">-₹0.00</span>
+        </div>
+    </div>
+
+    <h3>History</h3>
+    <ul id="list" class="list"></ul>
+
+    <h3>New Transaction</h3>
+    <form id="form">
+        <input type="text" id="text" placeholder="Description (e.g. Rent)" required>
+        <input type="number" id="amount" placeholder="Amount (- for expense, + for income)" required step="0.01">
+        <button class="btn">Add Transaction</button>
+    </form>
+</div>
+
+<script src="expense.js"></script>
+</body>
+</html>
